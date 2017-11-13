@@ -5,7 +5,7 @@ def alphabetize(arr)
 
 
   arr.sort {
-    |word, word2| word.each_with_index { |letter, idx| 
+    |word, word2| word.split('').each_with_index { |letter, idx|
       esp_alphabet.index(letter) <=> esp_alphabet.index(word2[idx])
     }
   }
