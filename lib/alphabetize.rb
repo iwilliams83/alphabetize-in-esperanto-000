@@ -3,6 +3,7 @@ def alphabetize(arr)
   #arr = ["mi amas vin", "bonan matenon", "pacon", "ĉu vi parolas esperanton"]
   esp_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
+puts "esp #{esp_alphabet.with_index.to_a.to_h}"
 
   arr.sort {
     |word, word2| word.split('').each_with_index { |letter, idx|
