@@ -7,6 +7,4 @@ def alphabetize(arr)
     |word| word.split('').each{|letter| esp_alphabet.index(letter)}
   }
 
-
-
 end
