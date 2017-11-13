@@ -4,8 +4,6 @@ def alphabetize(arr)
   esp_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 
-  arr.sort_by do |word|
-      esp_alphabet.index(word[i])
-    end
-    
+  arr.sort_by {|word| esp_alphabet.index(word[0])}
+
 end
