@@ -4,7 +4,7 @@ def alphabetize(arr)
   esp_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
   arr.sort_by {
-    |word| word.split('').each{|letter| esp_alphabet.index(letter)}
+    |word| word.split('').map{|letter| esp_alphabet.index(letter)}
   }
 
 end
