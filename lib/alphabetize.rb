@@ -6,7 +6,7 @@ def alphabetize(arr)
 puts "esp #{esp_alphabet.each_char.with_index.to_a.to_h}"
 
   arr.sort_by {
-    |word| word.split('').each(|letter,idx| esp_alphabet.index(word)) 
+    |word| word.split('').each{|letter| esp_alphabet.index(word)}
   }
 
 
