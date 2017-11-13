@@ -4,8 +4,12 @@ def alphabetize(arr)
   esp_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 
-  arr.sort_by {|word| esp_alphabet.index(word[0])}
+  arr.sort_by {
+    |word| word.each_with_index {
+     |letter, idx| esp_alphabet.index(letter)
+    }
+  }
 
-  arr.sort_by {|word| esp_alphabet.index(word[1])}
+
 
 end
