@@ -7,8 +7,7 @@ puts "esp #{esp_alphabet.with_index.to_a.to_h}"
 
   arr.sort {
     |word, word2| word.split('').each_with_index { |letter, idx|
-      if esp_alphabet.index(letter) > esp_alphabet.index(word2[idx]) then return word;
-      if esp_alphabet.index(letter) < esp_alphabet.index(word2[idx]) then return word2;
+      esp_alphabet.index(letter) > esp_alphabet.index(word2[idx])
     }
   }
 
