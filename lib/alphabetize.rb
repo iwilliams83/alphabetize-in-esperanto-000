@@ -5,9 +5,7 @@ def alphabetize(arr)
 
 
   arr.sort_by {
-    |word| word.map {
-     |letter| esp_alphabet.index(letter)
-   }.uniq.join('')
+    |word, word2| puts "#{word} and #{word2}" 
   }
 
 
