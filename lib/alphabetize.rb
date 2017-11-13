@@ -4,7 +4,7 @@ def alphabetize(arr)
   esp_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 
-  arr.sort_by {
+  arr.sort {
     |word, word2| puts "#{word} and #{word2}" 
   }
 
